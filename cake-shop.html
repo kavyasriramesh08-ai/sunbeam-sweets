@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunbeam Sweets | Cake Shop</title>
+    <meta name="description" content="Fresh cupcakes, muffins, cakes, and juices delivered fresh and fast." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="cake-style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <span>Sunbeam Sweets</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#login">Login</a>
+        </nav>
+
+        <button class="primary-btn small-btn cart-toggle" type="button">Cart <span id="cartCount">0</span></button>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">Baked fresh every day</p>
+            <h1>Sweet delight, delivered with sunshine.</h1>
+            <p class="hero-text">
+              Explore handcrafted cupcakes, soft muffins, premium whole cakes, and fresh juice mixes made for every celebration and cozy evening.
+            </p>
+
+            <div class="cta-group">
+              <a href="#menu" class="primary-btn">Explore Menu</a>
+              <a href="#login" class="secondary-btn">Login</a>
+            </div>
+
+            <div class="mini-stats">
+              <div>
+                <strong>5k+</strong>
+                <span>Orders</span>
+              </div>
+              <div>
+                <strong>4.8/5</strong>
+                <span>Reviews</span>
+              </div>
+              <div>
+                <strong>25 min</strong>
+                <span>Delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Cake shop illustration">
+            <div class="image-collage">
+              <div class="image-card tall-card"></div>
+              <div class="image-card cupcake-card"></div>
+              <div class="image-card cake-card"></div>
+            </div>
+            <div class="floating-badge badge-one">Fresh today</div>
+            <div class="floating-badge badge-two">Free delivery</div>
+          </div>
+        </section>
+
+        <section class="feature-strip">
+          <article>
+            <span class="icon">✦</span>
+            <h3>Freshly Baked</h3>
+            <p>Prepared in small batches for everyday freshness.</p>
+          </article>
+          <article>
+            <span class="icon">☀</span>
+            <h3>Healthy Add-ons</h3>
+            <p>Fruit-based juices and lighter dessert choices.</p>
+          </article>
+          <article>
+            <span class="icon">♡</span>
+            <h3>Gift Friendly</h3>
+            <p>Perfect for birthdays, office parties, and events.</p>
+          </article>
+        </section>
+
+        <section class="menu" id="menu">
+          <div class="section-heading">
+            <p class="eyebrow small-eyebrow">Our menu</p>
+            <h2>Fresh favorites</h2>
+          </div>
+
+          <div class="menu-grid">
+            <article class="product-card">
+              <div class="product-art art-cupcake"></div>
+              <div class="product-info">
+                <h3>Cupcakes</h3>
+                <ul>
+                  <li>Chocolate swirl</li>
+                  <li>Strawberry cream</li>
+                  <li>Vanilla confetti</li>
+                </ul>
+                <div class="product-meta">
+                  <span>₹120 / box</span>
+                  <button>Order</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-art art-muffin"></div>
+              <div class="product-info">
+                <h3>Muffins</h3>
+                <ul>
+                  <li>Blueberry crumb</li>
+                  <li>Banana oat</li>
+                  <li>Choco chip</li>
+                </ul>
+                <div class="product-meta">
+                  <span>₹180 / pack</span>
+                  <button>Order</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-art art-cake"></div>
+              <div class="product-info">
+                <h3>Whole Cakes</h3>
+                <ul>
+                  <li>Black forest</li>
+                  <li>Butterscotch</li>
+                  <li>Red velvet</li>
+                </ul>
+                <div class="product-meta">
+                  <span>₹699+</span>
+                  <button>Order</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-art art-juice"></div>
+              <div class="product-info">
+                <h3>Fresh Juices</h3>
+                <ul>
+                  <li>Mango blast</li>
+                  <li>Orange zest</li>
+                  <li>Lemon mint</li>
+                </ul>
+                <div class="product-meta">
+                  <span>₹120 / glass</span>
+                  <button>Order</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="luxury-collection" id="luxury">
+          <div class="section-heading">
+            <p class="eyebrow small-eyebrow">Luxury picks</p>
+            <h2>Premium dessert collection</h2>
+          </div>
+
+          <div class="luxury-grid">
+            <article class="luxury-card luxury-card-one">
+              <div class="luxury-image luxury-image-one"></div>
+              <div class="luxury-badge">Signature</div>
+              <h3>Royal Berry Gateau</h3>
+              <p>Silky cream layers, fresh berries, and a delicate vanilla finish.</p>
+              <div class="luxury-meta">
+                <span>₹1499</span>
+                <button>Reserve</button>
+              </div>
+            </article>
+
+            <article class="luxury-card luxury-card-two">
+              <div class="luxury-image luxury-image-two"></div>
+              <div class="luxury-badge">Chef's choice</div>
+              <h3>Truffle Velvet Cake</h3>
+              <p>Rich cocoa sponge with ganache glaze and handcrafted truffle topping.</p>
+              <div class="luxury-meta">
+                <span>₹1799</span>
+                <button>Reserve</button>
+              </div>
+            </article>
+
+            <article class="luxury-card luxury-card-three">
+              <div class="luxury-image luxury-image-three"></div>
+              <div class="luxury-badge">Limited</div>
+              <h3>Golden Dessert Box</h3>
+              <p>An elegant assortment of macarons, mini cakes, and buttery pastries.</p>
+              <div class="luxury-meta">
+                <span>₹1299</span>
+                <button>Reserve</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="coffee-section" id="coffee">
+          <div class="section-heading">
+            <p class="eyebrow small-eyebrow">Café favorites</p>
+            <h2>Perfect with your dessert</h2>
+          </div>
+
+          <div class="coffee-grid">
+            <article class="coffee-card">
+              <div class="coffee-image coffee-image-one"></div>
+              <div class="coffee-info">
+                <h3>Latte</h3>
+                <p>Smooth espresso with creamy steamed milk and a soft foam finish.</p>
+                <div class="coffee-meta">
+                  <span>₹220</span>
+                  <button>Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="coffee-card">
+              <div class="coffee-image coffee-image-two"></div>
+              <div class="coffee-info">
+                <h3>Americano</h3>
+                <p>Bold espresso diluted with hot water for a rich, clean roast taste.</p>
+                <div class="coffee-meta">
+                  <span>₹180</span>
+                  <button>Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="coffee-card">
+              <div class="coffee-image coffee-image-three"></div>
+              <div class="coffee-info">
+                <h3>Mocha</h3>
+                <p>Chocolate-infused espresso with velvety milk for a sweet finish.</p>
+                <div class="coffee-meta">
+                  <span>₹260</span>
+                  <button>Add</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="about-section" id="about">
+          <div class="section-heading">
+            <p class="eyebrow small-eyebrow">Why choose us</p>
+            <h2>About Sunbeam Sweets</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <h3>Freshly baked daily</h3>
+              <p>We prepare every cupcake, muffin, and cake in small batches to keep them soft, warm, and full of flavor.</p>
+            </div>
+            <div class="about-card">
+              <h3>Hygienic kitchen care</h3>
+              <p>Our kitchen follows strict cleanliness, safe ingredients, and proper packaging to ensure every order feels fresh and trustworthy.</p>
+            </div>
+            <div class="about-card">
+              <h3>Fast and happy delivery</h3>
+              <p>Our delivery partners ensure safe handling, on-time arrival, and friendly service so every celebration starts on a sweet note.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+          <div class="section-heading">
+            <p class="eyebrow small-eyebrow">Happy customers</p>
+            <h2>What people say</h2>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“The cupcakes were soft, colorful, and tasted homemade. Loved the quick delivery!”</p>
+              <h4>Priya S.</h4>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“The lemon mint juice and blueberry muffins were fresh and delicious. Will order again.”</p>
+              <h4>Arjun M.</h4>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>“Perfect for birthdays. The whole cake looked beautiful and tasted amazing.”</p>
+              <h4>Neha R.</h4>
+            </article>
+          </div>
+        </section>
+
+        <section class="login-section" id="login">
+          <div class="login-panel">
+            <div class="sweet-sprinkles" aria-hidden="true">
+              <span class="sweet-emoji emoji-1">🍰</span>
+              <span class="sweet-emoji emoji-2">🧁</span>
+              <span class="sweet-emoji emoji-3">🍪</span>
+              <span class="sweet-emoji emoji-4">🍩</span>
+              <span class="sweet-emoji emoji-5">🍓</span>
+              <span class="sweet-emoji emoji-6">🥐</span>
+              <span class="sweet-emoji emoji-7">🍰</span>
+              <span class="sweet-emoji emoji-8">🍦</span>
+              <span class="sweet-emoji emoji-9">🍮</span>
+              <span class="sweet-emoji emoji-10">🍭</span>
+              <span class="sweet-emoji emoji-11">🧁</span>
+              <span class="sweet-emoji emoji-12">🍪</span>
+            </div>
+
+            <div class="login-heading">
+              <p class="eyebrow small-eyebrow">Account access</p>
+              <h2>Choose your login</h2>
+            </div>
+
+            <div class="login-tabs" role="tablist" aria-label="Login options">
+              <button class="tab active" data-role="user" aria-selected="true">User Login</button>
+              <button class="tab" data-role="delivery" aria-selected="false">Delivery Partner</button>
+            </div>
+
+            <form class="auth-form active" id="userLoginForm" novalidate>
+              <label>
+                Email
+                <input type="email" placeholder="user@sunbeamsweets.com" required />
+              </label>
+              <label>
+                Password
+                <input type="password" placeholder="Enter password" required />
+              </label>
+              <button type="submit" class="primary-btn full-width">Login as User</button>
+            </form>
+
+            <form class="auth-form" id="deliveryLoginForm" novalidate>
+              <label>
+                Delivery ID
+                <input type="text" placeholder="DP-1024" required />
+              </label>
+              <label>
+                Password
+                <input type="password" placeholder="Enter delivery password" required />
+              </label>
+              <button type="submit" class="primary-btn full-width">Login as Partner</button>
+            </form>
+
+            <div class="demo-box">
+              <p><strong>User:</strong> user@sunbeamsweets.com / 123456</p>
+              <p><strong>Delivery partner:</strong> DP-1024 / partner123</p>
+            </div>
+
+            <p class="status-message" id="statusMessage" aria-live="polite"></p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="brand footer-brand">
+          <span class="brand-mark">S</span>
+          <span>Sunbeam Sweets</span>
+        </div>
+        <p>Fresh treats • Fast delivery • Sweet smiles</p>
+      </footer>
+    </div>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Shopping cart">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="close-cart" type="button" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Total</span>
+          <strong id="cartTotal">₹0</strong>
+        </div>
+        <button class="primary-btn full-width checkout-btn" type="button">Checkout</button>
+      </div>
+    </aside>
+
+    <div class="selection-modal" id="selectionModal" aria-hidden="true">
+      <div class="selection-card">
+        <button class="close-selection" type="button" aria-label="Close selection">×</button>
+        <h3>Choose your option</h3>
+        <p id="selectionPrompt">Select your preferred flavor or size.</p>
+
+        <div class="selection-group" id="selectionChoices"></div>
+
+        <button class="primary-btn full-width add-to-cart-btn" type="button">Add to cart</button>
+      </div>
+    </div>
+
+    <script src="cake-script.js"></script>
+  </body>
+</html>
