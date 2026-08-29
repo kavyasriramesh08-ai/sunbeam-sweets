@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaperBloom | Stationery Delivery</title>
+    <meta
+      name="description"
+      content="PaperBloom delivers stationery essentials and desk essentials with delightful service."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="PaperBloom home">
+          <span class="brand-mark">P</span>
+          <span>PaperBloom</span>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#catalog">Catalog</a>
+          <a href="#login">Login</a>
+        </nav>
+
+        <button class="primary-btn small-btn">Order Now</button>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy">
+            <p class="eyebrow">Fresh stationery, right at your door</p>
+            <h1>Make every desk feel bright and organized.</h1>
+            <p class="hero-text">
+              From premium notebooks and pens to creative desk essentials, we deliver
+              practical and pretty stationery products in record time.
+            </p>
+
+            <div class="cta-group">
+              <a href="#login" class="primary-btn">Login</a>
+              <a href="#catalog" class="secondary-btn">View Catalog</a>
+            </div>
+
+            <div class="mini-stats" aria-label="Store metrics">
+              <div>
+                <strong>12k+</strong>
+                <span>Orders</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Rating</span>
+              </div>
+              <div>
+                <strong>30 min</strong>
+                <span>Average delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Stationery delivery illustration">
+            <div class="visual-card big-card">
+              <div class="card-tag">Top Pick</div>
+              <h3>Starter Office Kit</h3>
+              <ul>
+                <li>Premium notebook</li>
+                <li>Gel pens</li>
+                <li>Desk organizer</li>
+              </ul>
+              <div class="price-row">
+                <span class="price">$28</span>
+                <button class="ghost-btn">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-one">Free delivery</div>
+            <div class="floating-badge badge-two">New arrival</div>
+          </div>
+        </section>
+
+        <section class="feature-strip" id="services">
+          <article>
+            <span class="icon">✦</span>
+            <h3>Fast Delivery</h3>
+            <p>Same-day delivery across the city.</p>
+          </article>
+          <article>
+            <span class="icon">☑</span>
+            <h3>Curated Picks</h3>
+            <p>Only premium stationery essentials.</p>
+          </article>
+          <article>
+            <span class="icon">♡</span>
+            <h3>Customer Care</h3>
+            <p>Friendly support for every order.</p>
+          </article>
+        </section>
+
+        <section class="login-section" id="login">
+          <div class="login-panel">
+            <div class="login-heading">
+              <p class="eyebrow small-eyebrow">Account access</p>
+              <h2>Login to continue</h2>
+            </div>
+
+            <div class="login-tabs" role="tablist" aria-label="Login options">
+              <button class="tab active" type="button" data-role="user" aria-selected="true">
+                User Login
+              </button>
+              <button class="tab" type="button" data-role="admin" aria-selected="false">
+                Admin Login
+              </button>
+            </div>
+
+            <form class="auth-form active" id="userLoginForm" novalidate>
+              <label>
+                Email address
+                <input type="email" name="email" placeholder="user@paperbloom.com" required />
+              </label>
+              <label>
+                Password
+                <input type="password" name="password" placeholder="Enter password" required />
+              </label>
+              <button type="submit" class="primary-btn full-width">Sign in as User</button>
+            </form>
+
+            <form class="auth-form" id="adminLoginForm" novalidate>
+              <label>
+                Admin email
+                <input type="email" name="email" placeholder="admin@paperbloom.com" required />
+              </label>
+              <label>
+                Password
+                <input type="password" name="password" placeholder="Enter admin password" required />
+              </label>
+              <button type="submit" class="primary-btn full-width">Sign in as Admin</button>
+            </form>
+
+            <div class="demo-box">
+              <p><strong>Demo user:</strong> user@paperbloom.com / 123456</p>
+              <p><strong>Demo admin:</strong> admin@paperbloom.com / admin123</p>
+            </div>
+
+            <p class="status-message" id="statusMessage" aria-live="polite"></p>
+          </div>
+        </section>
+
+        <section class="catalog" id="catalog">
+          <div class="section-heading">
+            <p class="eyebrow small-eyebrow">Popular essentials</p>
+            <h2>Best-selling stationery</h2>
+          </div>
+
+          <div class="catalog-grid">
+            <article class="product-card">
+              <div class="product-art art-1"></div>
+              <div class="product-info">
+                <h3>Classic Writer Set</h3>
+                <p>Soft-touch pens and elegant notepad set.</p>
+                <div class="product-meta">
+                  <span>$19</span>
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-art art-2"></div>
+              <div class="product-info">
+                <h3>Desk Organizer</h3>
+                <p>Keep your workspace neat and beautiful.</p>
+                <div class="product-meta">
+                  <span>$24</span>
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-art art-3"></div>
+              <div class="product-info">
+                <h3>Premium Planner</h3>
+                <p>Plan the week with a stylish notebook.</p>
+                <div class="product-meta">
+                  <span>$21</span>
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-art art-4"></div>
+              <div class="product-info">
+                <h3>Art Supply Pack</h3>
+                <p>Perfect for journaling and creative tasks.</p>
+                <div class="product-meta">
+                  <span>$29</span>
+                  <button>Buy now</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">P</span>
+            <span>PaperBloom</span>
+          </div>
+        </div>
+        <p>© 2026 PaperBloom. Your stationery guide.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
